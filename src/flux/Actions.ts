@@ -1,7 +1,15 @@
 import { AppDispatcher } from './Dispatcher';
 
-export const Actions = {
+FetchActionType {
+    GET_FETCH: 'GET_FETCH'
+}
+
+
+
+export const fetchAction = {
     do: () => {
         AppDispatcher.dispatch({});
     },
+
 };
+

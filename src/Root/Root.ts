@@ -13,7 +13,19 @@ class Root extends HTMLElement {
     render() {
         if (!this.shadowRoot) return;
 
-        this.shadowRoot.innerHTML = `app`;
+        this.shadowRoot.innerHTML = `
+        <style>
+        h1 {
+            font-family: Inter, sans-serif;
+            align-text: center;
+            margin: 50px;
+        }
+        </style>
+
+        <h1>El jardin de los Calvo :)</h1>
+        <card-component></card-component>
+        
+        `;
     }
 }
 
